@@ -47,9 +47,10 @@ app
 3. Based on this command config and the options passed by the `full:testnet` command, we can see that the network sets the `config` directory to `lib/config/testnet`, the `network` option to `testnet`, and the `network-start` option to `true`, which starts our testnet from scratch with a new genesis block.
 4. The exported function from `lib/start-relay-and-forger` is loaded and called with the above options to start the network. Let's look at the function exported by `start-relay-and-forger.js`:
 
-const container = require('@arkecosystem/core-container')
 
 ```js
+const container = require('@arkecosystem/core-container')
+
 /**
   * Start a node.
   * @param  {Object} options
